@@ -1,0 +1,5 @@
+let rec sum_aux limit n sum i =
+  if (i >= limit)
+      sum
+  else
+    sum_aux limit n (sum+i) (i+n);;

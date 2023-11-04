@@ -1,0 +1,36 @@
+	Tue Mar 13 00:27 2012 Time and Allocation Profiling Report  (Final)
+
+	   euler37 +RTS -p -RTS
+
+	total time  =        1.38 secs   (69 ticks @ 20 ms)
+	total alloc = 4,377,019,760 bytes  (excludes profiling overheads)
+
+COST CENTRE                    MODULE               %time %alloc
+
+primes                         Main                  79.7   83.4
+primes_set                     Main                  20.3   16.6
+
+
+                                                                                               individual    inherited
+COST CENTRE              MODULE                                               no.    entries  %time %alloc   %time %alloc
+
+MAIN                     MAIN                                                   1           0   0.0    0.0   100.0  100.0
+ CAF                     Main                                                 270           7   0.0    0.0   100.0  100.0
+  primes_set             Main                                                 285           1  20.3   16.6    20.3   16.6
+  primes                 Main                                                 281           1  79.7   83.4    79.7   83.4
+  start_primes           Main                                                 280           1   0.0    0.0     0.0    0.0
+  e37list                Main                                                 278           1   0.0    0.0     0.0    0.0
+   is_left_trunc_prime   Main                                                 282          70   0.0    0.0     0.0    0.0
+    is_prime             Main                                                 284         164   0.0    0.0     0.0    0.0
+    left_trunc_list      Main                                                 283          70   0.0    0.0     0.0    0.0
+     left_trunc          Main                                                 286         109   0.0    0.0     0.0    0.0
+      number_to_list     Pand                                                 290          94   0.0    0.0     0.0    0.0
+      list_to_number     Pand                                                 289          94   0.0    0.0     0.0    0.0
+   recursive_add_digits  Main                                                 279           1   0.0    0.0     0.0    0.0
+    add_digit            Main                                                 287           5   0.0    0.0     0.0    0.0
+     is_prime            Main                                                 288         290   0.0    0.0     0.0    0.0
+  e37sum                 Main                                                 277           1   0.0    0.0     0.0    0.0
+  main                   Main                                                 276           1   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Handle.FD                                     206           2   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Encoding.Iconv                                167           2   0.0    0.0     0.0    0.0
+ CAF                     GHC.Conc.Signal                                      160           1   0.0    0.0     0.0    0.0

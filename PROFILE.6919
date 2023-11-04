@@ -1,0 +1,5 @@
+(make-sieve 1 2031)
+(count-breadcrumbs 11402487 36119)
+(follow-seq 1000000 52388)
+(find-longest-seq 1 55569)
+(euler95 1 55569)

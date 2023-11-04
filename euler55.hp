@@ -1,0 +1,20 @@
+JOB "euler55 +RTS -hc"
+DATE "Fri Mar 23 22:18 2012"
+SAMPLE_UNIT "seconds"
+VALUE_UNIT "bytes"
+BEGIN_SAMPLE 0.00
+END_SAMPLE 0.00
+BEGIN_SAMPLE 0.22
+(255)number_to_listr/Pand.CAF	28
+(248)main/Main.CAF	48
+(139)GHC.IO.Encoding.Iconv.CAF	288
+(132)GHC.Conc.Signal.CAF	320
+(178)GHC.IO.Handle.FD.CAF	316
+(242)Main.CAF	88
+(249)e55/Main.CAF	104
+(251)runSequence/startSequ...	36
+(256)list_to_number/runSeq...	36
+(257)number_to_listr/runSe...	48
+END_SAMPLE 0.22
+BEGIN_SAMPLE 0.39
+END_SAMPLE 0.39

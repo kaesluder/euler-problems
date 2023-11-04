@@ -1,0 +1,9 @@
+#lang racket
+(require racket/math)
+
+(define (number-to-list n)
+  (define (loop p n)
+    (if (> 9 n)
+        (loop (cons (modulo n 10) p) (div n 10))
+        (cons n p)))
+  (loop '() n))

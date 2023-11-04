@@ -1,0 +1,39 @@
+	Fri Mar 30 22:45 2012 Time and Allocation Profiling Report  (Final)
+
+	   euler58 +RTS -p -RTS
+
+	total time  =        1.86 secs   (93 ticks @ 20 ms)
+	total alloc = 2,043,287,428 bytes  (excludes profiling overheads)
+
+COST CENTRE                    MODULE               %time %alloc
+
+powerMod                       Main                  87.1   89.2
+mr_sd                          Main                   6.5    4.9
+mr_test_candidate              Main                   4.3    3.4
+mr_get_witnesses               Main                   1.1    0.4
+gensides3                      Main                   1.1    0.5
+powerWithModulus               Main                   0.0    1.1
+
+
+                                                                                               individual    inherited
+COST CENTRE              MODULE                                               no.    entries  %time %alloc   %time %alloc
+
+MAIN                     MAIN                                                   1           0   0.0    0.0   100.0  100.0
+ CAF                     Main                                                 246           5   0.0    0.0   100.0  100.0
+  prime_sides_cumulative Main                                                 255           1   0.0    0.1   100.0   99.8
+   prime_sides2          Main                                                 257       13120   0.0    0.0   100.0   99.7
+    mr_is_prime          Main                                                 259       39360   0.0    0.3    98.9   99.2
+     mr_test_candidate   Main                                                 261       52184   4.3    3.4    97.8   98.6
+      powerWithModulus   Main                                                 263      131307   0.0    1.1    87.1   90.3
+       powerMod          Main                                                 264     3193878  87.1   89.2    87.1   89.2
+      mr_sd              Main                                                 262       52182   6.5    4.9     6.5    4.9
+     mr_get_witnesses    Main                                                 260       39360   1.1    0.4     1.1    0.4
+    gensides3            Main                                                 258       13120   1.1    0.5     1.1    0.5
+  gen_spiral3            Main                                                 254           1   0.0    0.1     0.0    0.2
+   diagonals             Main                                                 265       13120   0.0    0.1     0.0    0.1
+  e58'                   Main                                                 253           1   0.0    0.0     0.0    0.0
+   primeCountsFilter     Main                                                 256       13120   0.0    0.0     0.0    0.0
+  main                   Main                                                 252           1   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Handle.FD                                     182           2   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Encoding.Iconv                                143           2   0.0    0.0     0.0    0.0
+ CAF                     GHC.Conc.Signal                                      136           1   0.0    0.0     0.0    0.0
